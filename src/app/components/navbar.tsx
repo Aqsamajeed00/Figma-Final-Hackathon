@@ -12,12 +12,11 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
   return (
     <div className="p-4 w-full h-auto">
       {/* Top Section */}
       <div className="flex justify-between items-center py-2">
-        {/* Search Icon for Large Screens (Tablet and above) */}
+        {/* Search Icon for Large Screens */}
         <div className="sm:hidden md:block">
           <CiSearch size={25} className="text-[#2A254B]" />
         </div>
@@ -27,7 +26,7 @@ const Navbar = () => {
           Avion
         </h1>
 
-        {/* Cart and Contact Icons for Large Screens */}
+        {/* Cart and Contact Icons */}
         <div className="sm:hidden md:flex gap-4">
           <Link href="/Cart">
           <IoCartOutline size={25} className="text-[#2A254B]" />

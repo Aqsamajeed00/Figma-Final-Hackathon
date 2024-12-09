@@ -6,7 +6,7 @@ const Product = () => {
   const router = useRouter();
 
   const handleNavigation = () => {
-    router.push('/productlisting'); // Navigates to the "/about" page
+    router.push('/productlisting'); 
   };
   return (
     <>
@@ -14,13 +14,13 @@ const Product = () => {
         <div className='px-8 py-12 text-[#2A254B] mt-12'>
           <h1 className='text-2xl'>Our popular products</h1>
 
-          {/* Flexbox layout: stack on small screens, side by side on medium and large screens */}
+          {/* Flexbox layout:*/}
           <div className='flex flex-col md:flex-row gap-8 mt-8'>
             
             {/* Product 1 */}
             <div className='w-full md:w-[700px] h-auto'>
               <Image
-                src={'/images/large.png'}
+                src={'/images/sofa.png'}
                 height={800}
                 width={800}
                 alt='sofa'
@@ -64,7 +64,7 @@ const Product = () => {
 
           </div>
 
-          {/* View Collection Button */}
+          {/* View Button */}
           <div className='my-10 flex justify-center items-center'>
             <button className='bg-[#F9F9F9] py-4 px-6 rounded-[5px] text-[#2A254B]' onClick={handleNavigation}>
               View products
